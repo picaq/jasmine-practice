@@ -5,4 +5,4 @@ let appender = function(append) {
     return appended;
 }
 
-module.export(appender);
+module.exports = appender;
