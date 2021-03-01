@@ -1,4 +1,9 @@
-const appender = require('../jasminetest.js');
+// const appender = require('../jasminetest.js');
+// const {appender, apple} = require('../jasminetest.js');
+
+const thisModule = require('../jasminetest.js');
+const apple = thisModule.apple;
+const appender = thisModule.appender;
 
 describe("string appender", () => {
     const squeezeJuice = appender(" juice");
@@ -11,5 +16,8 @@ describe("string appender", () => {
     });
     it("adds juice to string", () => {
         expect(squeezeJuice("leek")).toEqual("leek juice");
+    });
+    it("returns trees", () => {
+        expect(apple()).toEqual("trees");
     });
 });

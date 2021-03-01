@@ -5,4 +5,12 @@ let appender = function(append) {
     return appended;
 }
 
-module.exports = appender;
+let apple = () => {
+    return "trees";
+}
+
+// module.exports = appender;
+module.exports = {
+    appender: appender,
+    apple: apple
+};
